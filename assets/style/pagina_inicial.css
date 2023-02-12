@@ -3,41 +3,82 @@
 :root{
     font-size: 20px;
     --fonte-normal: 'Roboto', Arial, Helvetica, sans-serif;
+    --cor-azul-claro: #8ECAE6;
+    --cor-azul-quente:#003554;
+    --cor-letra-fundo-claro:#001d3d;
 
 }
 
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto';
-
+    font-family: 'Nunito', sans-serif;
 }
 
-/*Logo*/
+/*--Estilização do cabeçalho--*/
 
 header{
 
     /*Cores*/
 
-    background-color: #8ECAE6;
+    background-color: var(--cor-azul-claro);
 
     /*Posicionamento*/
+
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 
     /*Tamanho*/
+
     width: 100%;
 
 }
 
 .logo{
-    margin: 20px;
+
+    /*Posicionamento*/
+
+    margin: 1vh;
+}
+
+.nav-menu{
+
+    /*Tamanho*/
+
+    /*Posicionamento*/
+
+    display: flex;
+    gap: 50px;
+    margin: 1vh;
+    padding: 20px;
 
 }
 
-/*Titulo*/
+.nav-menu a{
+
+    /*Cores e texto*/
+
+    color: var(--cor-letra-fundo-claro);
+    text-decoration: none;
+
+    /*Posicionamento*/
+
+}
+
+
+/*--Main--*/
+
+main{
+
+    /*Tamanho*/
+
+    height: 76vh;
+}
+
+/*--Titulo--*/
 
 .titulo{
+
     /*Texto*/
 
     font-style: normal;
@@ -46,30 +87,26 @@ header{
     line-height: 36px;
 
     /* Cores */
-    color: #003554;
+
+    color: var(--cor-azul-quente);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     margin: 20px;
 
-    /*posicionamento*/
+    /*Posicionamento*/
+
     padding-right: 800px;
     padding-top: 20px;
 }
 
-/*Main*/
 
-main{
-    /*Tamanho*/
-
-    height: 76vh;
-}
-
-/*Footer*/
+/*--Footer--*/
 
 footer{
+
     /*Cores*/
 
     background-color: #003554;
-    color: aliceblue;
+    color: #fff;
 
     /*Posicionamento*/
 
@@ -79,6 +116,6 @@ footer{
     justify-content: center;
 
     /*Tamanho*/
-    height: 12vh;
+    height: 20vh;
     width: 100%;
 }
