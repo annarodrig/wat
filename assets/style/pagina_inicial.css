@@ -55,6 +55,14 @@ header{
     padding-top: 20px;
 }
 
+/*Main*/
+
+main{
+    /*Tamanho*/
+
+    height: 76vh;
+}
+
 /*Footer*/
 
 footer{
