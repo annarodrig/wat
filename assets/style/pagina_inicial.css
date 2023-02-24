@@ -3,16 +3,23 @@
 :root{
     font-size: 20px;
     --fonte-normal: 'Roboto', Arial, Helvetica, sans-serif;
+    --cor-cinza-claro: #e5e5e5;
     --cor-azul-claro: #8ECAE6;
-    --cor-azul-quente:#003554;
-    --cor-letra-fundo-claro:#001d3d;
+    --cor-azul-escuro:#003554;
+    --cor-texto-fundo-claro:#001d3d;
+    --cor-texto-fundo-escuro: #edede9;
 
 }
 
 * {
+    
     margin: 0;
     padding: 0;
     font-family: 'Nunito', sans-serif;
+}
+
+body {
+    background-color: var(--cor-cinza-claro);
 }
 
 /*--Estilização do cabeçalho--*/
@@ -29,8 +36,8 @@ header{
     justify-content: space-between;
 
     /*Tamanho*/
-
     width: 100%;
+
 
 }
 
@@ -42,8 +49,6 @@ header{
 }
 
 .nav-menu{
-
-    /*Tamanho*/
 
     /*Posicionamento*/
 
@@ -58,42 +63,67 @@ header{
 
     /*Cores e texto*/
 
-    color: var(--cor-letra-fundo-claro);
+    color: var(--cor-texto-fundo-claro);
     text-decoration: none;
-
-    /*Posicionamento*/
 
 }
 
-
 /*--Main--*/
 
-main{
+/* main{
 
-    /*Tamanho*/
+} */
 
-    height: 76vh;
+/* primeira section */
+
+.section-1 {
+    padding-left: 3rem;
+    padding-right: 2rem;
+    padding-bottom: 5rem;
+    text-align: justify;
+    
+}
+/* segunda section */
+
+.section-2 {
+    padding-top: 1rem;
+    padding-left: 3rem;
+    padding-right: 2rem;
+    padding-bottom: 5rem;
+    background-color: var(--cor-azul-claro);
+}
+
+/* logo info section-2 */
+
+.info-logo {
+    width: 1.5rem;
+}
+
+/* logo documentação WCAG section-2 */
+
+.docWCAG-icon {
+    
+    width: 1.5rem;
 }
 
 /*--Titulo--*/
 
 .titulo{
-
     /*Texto*/
-
     font-style: normal;
-    font-weight: 400;
-    font-size: 30.3158px;
-    line-height: 36px;
+    font-weight: 700;
+    font-size: 60px;
+    width: 20rem;
+    line-height: 4rem;
+    text-align:left;
 
     /* Cores */
 
-    color: var(--cor-azul-quente);
+    color: var(--cor-azul-escuro);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     margin: 20px;
 
     /*Posicionamento*/
-
     padding-right: 800px;
     padding-top: 20px;
 }
@@ -103,10 +133,11 @@ main{
 
 footer{
 
-    /*Cores*/
+    /*Cores e texto*/
 
+    font-size: 15px;
     background-color: #003554;
-    color: #fff;
+    color: var(--cor-texto-fundo-escuro);
 
     /*Posicionamento*/
 
@@ -116,6 +147,6 @@ footer{
     justify-content: center;
 
     /*Tamanho*/
-    height: 20vh;
+    height: 10vh;
     width: 100%;
 }
