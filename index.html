@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>WAT</title>
+    <title>WAT - WEB ACESSÍVEL PARA TODOS</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="assets/style/pagina_inicial.css">
     <link rel="stylesheet" href="assets/style/header_home.css">
     <link rel="stylesheet" href="assets/style/main_home.css">
+    <link rel="stylesheet" href="assets/style/aside_home.css">
 </head>
 <body>
     <header>
@@ -50,6 +51,36 @@
                 <img src="assets/img/img-pessoas-em-png.png" alt="">
             </section>
     </main>
+    <aside aria-label="Seção que contém as informações de missão, visão e valores da empresa acessibiliza">
+
+            <h1 class="empresa-titulo">Contruir uma web sem barreiras</h1>
+
+            <section class="empresa">
+                <div class="empresa-container">
+                    <h2>Missão</h2>
+                    <p>A nossa é missão ajudar a quebrar as barreiras de acesso que existem na web, acreditando que cada tecnologia utilizada corretamente no desenvolvimento do seu site, fará grande diferença na vida do usuário com alguma limitação física ou neurológica.</p>
+                </div>
+                <div class="empresa-container">
+                    <h2>Visão</h2>
+                    <p>A empresa visa ser um grande auxílio para desenvolvedores, disponibilizando através do WAT amparo indispensável para tornarem seus projetos acessíveis. O futuro da empresa é garantir que estudantes e desenvolvedores tenham capacidade técnica para criar sites acessíveis.</p>
+                </div>
+                <div class="empresa-container">
+                    <h2>Valores</h2>
+                    <ul>
+                        <li>Inclusão</li>
+                        <li>Ética</li>
+                        <li>Comprometimento</li>
+                        <li>Qualidade</li>
+                        <li>Conhecimento</li>
+                    </ul>
+                </div>
+                <section class="frase">
+                    <img src="assets/img/e-book (1) 1.svg" alt="">
+                    <div id="linha-vertical"></div>
+                    <p> “O poder da Web está em sua universalidade. O acesso de todos, independentemente da deficiência, é um aspecto essencial." (Berners-Lee, Tim)</p>
+                </section>
+            </section>
+    </aside>
     <footer>
         <section>
             <img src="assets/img/Logo Wrapper.svg" alt="Logo da empresa acessibiliza, globo com borboleta sobreposta na cor azul">
@@ -60,5 +91,15 @@
         </section>
     </footer>
     <script src="mobile.navbar.js"></script>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
 </body>
 </html>

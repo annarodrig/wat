@@ -34,6 +34,7 @@ body {
 footer{
 
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     padding: 77px 3px 8px 24px;

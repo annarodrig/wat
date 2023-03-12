@@ -1,0 +1,98 @@
+:root {
+
+    font-size: 20px;
+    --fonte-normal: 'Poppins', sans-serif;
+    --fonte-titulo: 'Fjalla One', sans-serif;
+    --cor-cinza-claro: #f5f5f5;
+    --cor-azul-escuro:#2B468B;
+    --cor-texto-fundo-claro:#01273D;
+    --cor-texto-fundo-escuro: #edede9;
+    --cor-tom-laranja-claro: #FADDBF;
+
+}
+
+aside {
+
+    background-color: var(--cor-tom-laranja-claro);
+
+}
+
+.empresa {
+
+    /*Posicionamento*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.empresa-titulo{
+
+    text-align: center;
+    margin: 1rem;
+    padding-top: 2rem;
+    color: var(--cor-texto-fundo-claro);
+    font-size: 40px;
+}
+
+.empresa-container {
+
+    background-color: #FA9746;
+    margin: 2rem;
+    padding: 2rem;
+    padding-top: 20px;
+    width: 400px;
+
+}
+
+.empresa-container h2{
+
+    background-color: #F6F6F6;
+    text-align: center;
+    padding: 0.50rem;
+    margin: 1rem;
+
+}
+
+.empresa p, ul, li {
+
+    margin: 1rem;
+
+}
+
+.frase {
+
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    margin: auto;
+
+}
+
+.frase p {
+
+    text-align: center;
+    width: 900px;
+
+}
+
+#linha-vertical {
+    margin: 20px;
+    height: 150px;
+    border-right: 1px solid black;
+}
+
+@media (max-width: 999px) {
+
+    .frase{
+
+        flex-wrap: nowrap;
+    }
+
+    .frase p {
+
+        width: 400px;
+
+    }
+    
+}
