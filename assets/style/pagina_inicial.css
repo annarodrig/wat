@@ -8,6 +8,7 @@
     --cor-azul-escuro:#2B468B;
     --cor-texto-fundo-claro:#01273D;
     --cor-texto-fundo-escuro: #edede9;
+    --cor-tom-laranja-claro: #FADDBF;
 
 }
 
@@ -27,19 +28,6 @@ html, body, header{
 body {
     background-color: var(--cor-cinza-claro);
 }
-
-
-/* segunda section */
-
-.section-2 {
-    padding-top: 1rem;
-    padding-left: 3rem;
-    padding-right: 2rem;
-    padding-bottom: 5rem;
-    background-color: #FADDBF;
-    
-}
-
 
 /*--Footer--*/
 

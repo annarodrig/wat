@@ -1,0 +1,80 @@
+/*Estilização da página incial*/
+
+:root{
+    font-size: 20px;
+    --fonte-normal: 'Poppins', sans-serif;
+    --fonte-titulo: 'Fjalla One', sans-serif;
+    --cor-cinza-claro: #f5f5f5;
+    --cor-azul-escuro:#2B468B;
+    --cor-tom-diferente-azul: #4895dd;
+    --cor-texto-fundo-claro:#01273D;
+    --cor-texto-fundo-escuro: #edede9;
+    --cor-tom-laranja-claro: #FADDBF;
+
+}
+
+/* segunda section */
+
+.main {
+
+    display: flex;
+    justify-content: space-around;
+    margin-top: -30px;
+
+    background-image: url(../img/degrade.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}    
+
+.titulo-texto {
+
+    font-size: 30px;
+    color: var(--cor-texto-fundo-claro);
+    text-align: center;
+    margin: 1rem;
+    top:250px;
+    padding-top: 250px;
+
+}
+
+.main p {
+
+    margin-left: 2rem;
+    padding: 1rem;
+    color: #01273D;
+    width: 100vh;
+
+}
+
+.img-principal {
+
+    margin-top: 220px;
+}
+
+@media (max-width: 999px) {
+
+    .main {
+        flex-direction: column;
+        background-size: contain;
+    }
+
+    .titulo-texto {
+
+        margin: 0;
+        padding-top: 150px;
+        
+    }
+    
+    .main p {
+
+        width: 70vw;
+        line-height: 2rem;
+        margin: auto;
+    }
+
+    .img-principal {
+
+        margin: auto;    
+
+    }
+}
