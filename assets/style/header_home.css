@@ -68,6 +68,13 @@ html, body, header {
 
 }
 
+.nav-link:hover {
+
+    color: #243f81;
+    font-size: 22px;
+
+}
+
 .mobile-menu {
 
     cursor: pointer;
@@ -111,6 +118,7 @@ html, body, header {
 
 
 .section-1 {
+
     margin: 3rem;
     margin-top: -15rem;
     margin-left: 3rem;
@@ -118,7 +126,7 @@ html, body, header {
     
 }
 
-.section-1 a {
+.acessibilidade {
 
     background-color: var(--cor-azul-escuro);
     border: medium solid var(--cor-azul-escuro);
@@ -156,7 +164,7 @@ html, body, header {
         align-items: center;
         justify-content: space-around;
         background-color: var(--cor-azul-escuro);
-        transform: translateX(100%);
+        transform: translateX(110%);
         transition: transform 0.3s ease-in;
     }
 

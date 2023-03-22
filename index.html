@@ -26,17 +26,26 @@
                     <div class="line2"></div>
                     <div class="line3"></div>
                 </div>
-                <ul class="nav-list">
-                    <li class="nav-item"><a class="nav-link"  href="">Documentação</a></li>
-                    <li class="nav-item"><a class="nav-link"  href="">Home</a></li>
-                    <li class="nav-item"><a class="nav-link"  href="">Acessibilidade</a></li>
+                <ul class="nav-list"
+                    role="navigation"
+                    aria-label="Navegação entre três páginas"
+                >
+                    <li class="nav-item">
+                        <a class="nav-link"  href="">Documentação</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="">Acessibilidade</a>
+                    </li>
                 </ul>
             </nav>
             <img class="img" src="assets/img/forma1-PhotoRoom_1-removebg-preview.png" alt="Forma em formato de onda na cor azul escuro">
         </section>
         <section class="section-1">
             <h1 class="titulo" >Entenda sobre acessibilidade e contribua para uma web sem barreiras</h1>
-            <a href="">Comece sua jornada com a acessbilidade</a>
+            <a class="acessibilidade" href="">Comece sua jornada com a acessbilidade</a>
         </section>
     </header>
     <main class="main">
@@ -55,23 +64,30 @@
 
             <h1 class="empresa-titulo">Contruir uma web sem barreiras</h1>
 
-            <section class="empresa">
-                <div tabindex="0" class="empresa-container">
+            <section class="empresa" 
+            role="tablist"
+            aria-label="Lista de três elementos"
+            >
+                <div  tabindex="0" role="tab" class="empresa-container">
                     <h2>Missão</h2>
                     <p>A nossa é missão ajudar a quebrar as barreiras de acesso que existem na web, acreditando que cada tecnologia utilizada corretamente no desenvolvimento do seu site, fará grande diferença na vida do usuário com alguma limitação física ou neurológica.</p>
                 </div>
-                <div tabindex="1" class="empresa-container">
+                <div tabindex="0" role="tab"  class="empresa-container">
                     <h2>Visão</h2>
                     <p>A empresa visa ser um grande auxílio para desenvolvedores, disponibilizando através do WAT amparo indispensável para tornarem seus projetos acessíveis. O futuro da empresa é garantir que estudantes e desenvolvedores tenham capacidade técnica para criar sites acessíveis.</p>
                 </div>
-                <div tabindex="1" class="empresa-container">
+                <div tabindex="0" role="tab" class="empresa-container">
                     <h2>Valores</h2>
-                    <ul tabindex="0" role="tablist">
-                        <li role="tab" tabindex="1">Inclusão</li>
-                        <li role="tab" tabindex="1">Ética</li>
-                        <li role="tab" tabindex="1">Comprometimento</li>
-                        <li role="tab" tabindex="1">Qualidade</li>
-                        <li role="tab" tabindex="1">Conhecimento</li>
+                    <ul 
+                    class="tabs_group"
+                    role="tablist"
+                    aria-label="Lista dos valores da empresa Acessibiliza"
+                    >
+                        <li role="tab">Inclusão</li>
+                        <li role="tab">Ética</li>
+                        <li role="tab">Comprometimento</li>
+                        <li role="tab">Qualidade</li>
+                        <li role="tab">Conhecimento</li>
                     </ul>
                 </div>
                 <section class="frase">
