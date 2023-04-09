@@ -1,0 +1,223 @@
+:root {
+
+    font-size: 20px;
+    --fonte-normal: 'Poppins', sans-serif;
+    --fonte-titulo: 'Fjalla One', sans-serif;
+    --cor-cinza-claro: #f5f5f5;
+    --cor-azul-escuro:#2B468B;
+    --cor-texto-fundo-claro:#01273D;
+    --cor-texto-fundo-escuro: #edede9;
+
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: var(--fonte-normal)
+}
+
+html, body, header {
+
+    margin:0px !important;
+    padding: 0px !important;
+ }
+
+/*--Estilização do cabeçalho--*/
+
+.imagens {
+
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+
+}
+
+.img, .img-laranja {
+
+    width: 450px;
+
+}
+
+/*--Section "O que é acessibilidade"--*/
+
+.acessibilidade {
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.acessibilidade-titulo {
+
+    color: var(--cor-texto-fundo-claro);
+    text-align: center;
+    font-weight: bold;
+    padding: 1rem;
+    margin-top: -350px;
+    margin-left: 150px;
+
+}
+
+.acessibilidade-p {
+
+    color: var(--cor-texto-fundo-claro);
+    font-size: 25px;
+    margin-left: 150px;
+    width: 80vh;
+    padding: 1rem;
+
+}
+
+.acessibilidade-p_diferente {
+
+    color: var(--cor-texto-fundo-claro);
+    font-size: 25px;
+    margin-left: 150px;
+    width: 120vh;
+    padding: 1rem;
+
+}
+
+.acessibilidade img {
+
+    margin-left: -550px;
+    width: 90vh;
+
+}
+
+/*Navegação e menu hamburguer responsivo*/
+
+.nav-list {
+
+    display: flex;
+    gap: 50px;
+    margin-top: 1rem;
+
+}
+
+.nav-item {
+
+    list-style-type: none; 
+
+}
+
+.nav-link {
+    
+    text-decoration: none;
+    color: var(--cor-texto-fundo-claro); 
+
+}
+
+.nav-link:hover {
+
+    color: #243f81;
+    font-size: 22px;
+
+}
+
+.mobile-menu {
+
+    cursor: pointer;
+    display: none;
+
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    margin: 8px;
+    background-color: var(--cor-texto-fundo-claro);
+
+}
+
+
+/*Resposividade do menu hamburguer*/
+
+@media (max-width: 999px) {
+
+    body {
+
+        overflow-x: hidden;
+
+    }
+
+    .img {
+
+        display: none;
+    }
+
+    .nav-list {
+
+        position: absolute;
+        margin-top: 0;
+        right: 0;
+        width: 50vw;
+        height: 70vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background-color: var(--cor-azul-escuro);
+        transform: translateX(110%);
+        transition: transform 0.3s ease-in;
+    }
+
+    .nav-item {
+        
+        margin-left: 0;
+        opacity: 0;
+    }
+
+    .nav-link {
+        color: var(--cor-texto-fundo-escuro);
+    }
+
+    .mobile-menu {
+
+        display: block;
+    
+    }
+
+    .nav-list.active {
+
+        transform: translateX(0);
+
+    }
+
+    
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0);
+
+        }
+    }
+
+    .img-laranja {
+
+        width: 325px;
+    }
+
+    .acessibilidade {
+
+        flex-direction: column;
+        flex-wrap: wrap;
+
+    }
+
+    .acessibilidade_container {
+    
+        display: flex;
+        flex-direction: column;
+    
+    }
+}

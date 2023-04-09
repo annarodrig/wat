@@ -1,0 +1,88 @@
+:root{
+    font-size: 20px;
+    --fonte-normal: 'Poppins', sans-serif;
+    --fonte-titulo: 'Fjalla One', sans-serif;
+    --cor-cinza-claro: #f5f5f5;
+    --cor-azul-escuro:#2B468B;
+    --cor-texto-fundo-claro:#01273D;
+    --cor-texto-fundo-escuro: #edede9;
+    --cor-tom-laranja-claro: #FADDBF;
+
+}
+
+* {
+    
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: var(--fonte-normal)
+}
+
+html, body, header{
+    margin:0px !important;
+    padding: 0px !important;
+ }
+
+body {
+    background-color: var(--cor-cinza-claro);
+}
+
+.busca {
+    text-align: center;
+    margin: auto;
+    padding: 2rem;
+    margin-top: -350px;
+    color: var(--cor-texto-fundo-escuro);
+    background-color: #4e6bb4;
+    width: 60vw;
+    height: 400px;
+    border-radius: 15px;
+}
+
+.busca h3 {
+    margin-top: 2rem;
+}
+
+.busca-selects {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+.busca-selects_diretriz {
+    margin: 15px;
+    padding: 20px;
+    width: 300px;
+    height: 70px;
+    border-radius: 15px;
+
+}
+
+.busca-selects_nivel {
+    margin: 15px;
+    padding: 20px;
+    width: 300px;
+    height: 70px;
+    border-radius: 15px;
+
+}
+
+.criterios {
+
+}
+
+/*--Footer--*/
+
+footer{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 77px 3px 8px 24px;
+    gap: 30px;
+
+    background: #F6F6F6;
+    border-radius: 0px;
+
+}

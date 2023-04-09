@@ -1,0 +1,72 @@
+:root {
+
+    font-size: 20px;
+    --fonte-normal: 'Poppins', sans-serif;
+    --fonte-titulo: 'Fjalla One', sans-serif;
+    --cor-cinza-claro: #f5f5f5;
+    --cor-azul-escuro:#2B468B;
+    --cor-texto-fundo-claro:#01273D;
+    --cor-texto-fundo-escuro: #edede9;
+    --cor-azul-claro: #6EB2E3;
+
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: var(--fonte-normal)
+}
+
+.importancia {
+
+    background-color: var(--cor-azul-claro);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 100px;
+}
+
+.importancia-titulo {
+
+    color: var(--cor-texto-fundo-claro);
+    margin: 1rem;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.importancia-p {
+
+    color: var(--cor-texto-fundo-claro);
+    font-size: 25px;
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+.importancia-subtitulo {
+
+    text-align: center;
+    font-weight: bold;
+
+}
+
+
+/*--Footer--*/
+
+footer{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 77px 3px 8px 24px;
+    gap: 30px;
+
+    background: #F6F6F6;
+    border-radius: 0px;
+
+}

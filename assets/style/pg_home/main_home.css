@@ -22,7 +22,7 @@
     margin-top: -30px;
     margin-bottom: 7rem;
 
-    background-image: url(../img/degrade.svg);
+    background-image: url(./degrade.svg);
     background-repeat: no-repeat;
     background-size: cover;
 }    

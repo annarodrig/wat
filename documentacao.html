@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOCUMENTAÇÃO | WEB ACESSÍVEL PARA TODOS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style/pg_acessibilidade/header_acessibilidade.css">
+    <link rel="stylesheet" href="assets/style/pg_acessibilidade/main_acessibilidade.css">
+    <link rel="stylesheet" href="assets/style/pg_documentacao/main_documentacao.css">
+</head>
+<body>
+    <header>
+        <section class="imagens">
+            <img class="img-laranja" src="assets/img/forma_fina-removebg-preview_1-removebg-preview (1).png" alt="Circulo vazado de cor laranja">
+            <nav class="nav">
+                <div role="navigation" tabindex="0" class="mobile-menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <ul class="nav-list"
+                    role="navigation"
+                    aria-label="Navegação entre três páginas"
+                >
+                    <li class="nav-item">
+                        <a class="nav-link"  href="documentacao.html">Documentação</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="acessibilidade.html">Acessibilidade</a>
+                    </li>
+                </ul>
+            </nav>
+            <img class="img" src="assets/img/forma1-PhotoRoom_1-removebg-preview.png" alt="Forma em formato de onda na cor azul escuro">
+    </header>
+    <main class="busca">
+        <h1>Navegue pela documentação WCAG</h1>
+        <h3>Escolha a diretriz e o nível de acessibilidade</h3>
+        <section class="busca-selects">
+                <select class="busca-selects_diretriz" name="diretriz" id="diretriz" >
+                    <option value="perceptivel">Percetível</option>
+                    <option value="perceptivel">Robusto</option>
+                    <option value="perceptivel">Operável</option>
+                    <option value="perceptivel">Compreensivo</option>
+                </select>
+                <select class="busca-selects_nivel" name="nivel" id="nivel" >
+                    <option value="nivelA">Nível A</option>
+                    <option value="nivelAA">Nível AA</option>
+                    <option value="nivelAAA">Nível AAA</option>
+                </select>
+        </section>
+        <section class="criterios">
+            
+        </section>
+    </main>
+    <footer>
+        <section>
+            <img src="assets/img/Logo Wrapper.svg" alt="Logo da empresa acessibiliza, globo com borboleta sobreposta na cor azul">
+        </section>
+        <section>
+          <p>Todos os direitos reservados &copy;</p>
+          <p>Desenvolvido pelo grupo WAT</p>
+        </section>
+      </footer>
+    <script src="mobile.navbar.js"></script>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous">
+    </script>
+</body>
+</html>
