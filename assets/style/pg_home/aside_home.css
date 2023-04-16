@@ -67,12 +67,12 @@ aside {
     padding: 2rem;
     margin: auto;
 
+
 }
 
 .frase p {
 
     text-align: center;
-    width: 900px;
 
 }
 
@@ -82,16 +82,35 @@ aside {
     border-right: 1px solid black;
 }
 
-@media (max-width: 999px) {
+@media (max-width: 1680px) {
+
+    .empresa {
+
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
 
     .frase{
 
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
     }
 
     .frase p {
 
-        width: 400px;
+        margin: auto;
+
+    }
+
+    .frase img{
+
+        width: 10vh;
+        margin: auto;
+    }
+
+    #linha-vertical {
+
+        opacity: 0;
 
     }
     
