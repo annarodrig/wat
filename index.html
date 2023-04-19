@@ -18,15 +18,19 @@
 </head>
 <body>
     <header>
+            <a class="nav-bar_acessibilidade" href="#top" accesskey="1">Ir para o Conteúdo Principal [Alt + 1]</a>
+            <a class="nav-bar_acessibilidade" href="#menu" accesskey="2">Início do Menu [Alt + 2]</a>
+            <a class="nav-bar_acessibilidade" href="#altocontraste" id="altocontraste" accesskey="3" onclick="window.toggleContrast()" onkeydown="window.toggleContrast()">Alto contraste [Alt + 3]</a>
+        </ul>
         <section class="imagens">
             <img class="img-laranja" src="assets/img/forma_fina-removebg-preview_1-removebg-preview (1).png" alt="Circulo vazado de cor laranja">
-            <nav class="nav">
+            <nav id="menu" class="nav">
                 <div role="navigation" tabindex="0" class="mobile-menu">
                     <div class="line1"></div>
                     <div class="line2"></div>
                     <div class="line3"></div>
                 </div>
-                <ul class="nav-list"
+                <ul id="menu" class="nav-list"
                     role="navigation"
                     aria-label="Navegação entre três páginas"
                 >
@@ -48,7 +52,7 @@
             <a class="acessibilidade" href="acessibilidade.html">Comece sua jornada com a acessbilidade</a>
         </section>
     </header>
-    <main class="main">
+    <main id="top" class="main">
             <section aria-label="Seção que contém um breve texto sobre a empresa acessibiliza e a acessibilidade em sites" class="texto">
                 <h2 class="titulo-texto">O intuito da empresa Acessibiliza</h2>
                 <p>
@@ -107,6 +111,8 @@
             <p>Desenvolvido pelo grupo WAT</p>
             <p>Todos os direitos reservados &copy;</p>
         </section>
+        <a class="nav-bar_acessibilidade" href="#top" accesskey="1">Ir para o Conteúdo Principal [Alt + 1]</a>
+        <a class="nav-bar_acessibilidade" href="#menu" accesskey="2">Início do Menu [Alt + 2]</a>
     </footer>
     <script src="mobile.navbar.js"></script>
     <div vw class="enabled">

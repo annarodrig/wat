@@ -67,7 +67,6 @@ aside {
     padding: 2rem;
     margin: auto;
 
-
 }
 
 .frase p {
@@ -77,6 +76,7 @@ aside {
 }
 
 #linha-vertical {
+
     margin: 20px;
     height: 150px;
     border-right: 1px solid black;
@@ -114,4 +114,20 @@ aside {
 
     }
     
+}
+
+@media (max-width: 530px) {
+
+    .empresa-container{
+
+        width: 200px;
+
+    }
+
+    .frase img{
+    
+        width: 8vh;
+
+    }
+
 }

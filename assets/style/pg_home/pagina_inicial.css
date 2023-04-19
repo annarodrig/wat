@@ -29,6 +29,22 @@ body {
     background-color: var(--cor-cinza-claro);
 }
 
+.nav-bar_acessibilidade {
+
+    position: absolute;
+    top: 5px;
+    left: -999px;
+    background-color: #e3f0f5;
+    color: var(--cor-texto-fundo-claro);
+    text-decoration: none;
+}
+
+    
+.nav-bar_acessibilidade:focus {
+
+    left: 5px;
+}
+
 /*--Footer--*/
 
 footer{

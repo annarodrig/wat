@@ -14,10 +14,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/style/pg_acessibilidade/header_acessibilidade.css">
     <link rel="stylesheet" href="assets/style/pg_acessibilidade/main_acessibilidade.css">
+    <link rel="stylesheet" href="assets/style/pg_home/pagina_inicial.css">
 </head>
 <body>
-    <header>
       <header>
+        <a class="nav-bar_acessibilidade" href="#top" accesskey="1">Ir para o Conteúdo Principal [Alt + 1]</a>
+        <a class="nav-bar_acessibilidade" href="#menu" accesskey="2">Início do Menu [Alt + 2]</a>
+        <a class="nav-bar_acessibilidade" href="#altocontraste" id="altocontraste" accesskey="3" onclick="window.toggleContrast()" onkeydown="window.toggleContrast()">Alto contraste [Alt + 3]</a>
         <section class="imagens">
             <img class="img-laranja" src="assets/img/forma_fina-removebg-preview_1-removebg-preview (1).png" alt="Circulo vazado de cor laranja">
             <nav class="nav">
@@ -26,7 +29,7 @@
                     <div class="line2"></div>
                     <div class="line3"></div>
                 </div>
-                <ul class="nav-list"
+                <ul id="menu" class="nav-list"
                     role="navigation"
                     aria-label="Navegação entre três páginas"
                 >
@@ -44,43 +47,43 @@
             <img class="img" src="assets/img/forma1-PhotoRoom_1-removebg-preview.png" alt="Forma em formato de onda na cor azul escuro">
         </section>
     </header>
-        <section class="acessibilidade">
+        <main id="top">
+          <section class="acessibilidade">
             <div class="acessibilidade_container">
                 <h1 class="acessibilidade-titulo">O que é acessibilidade</h1>
                 <p class="acessibilidade-p">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque soluta illo adipisci repellendus architecto similique dolorum reiciendis dignissimos cupiditate blanditiis tenetur praesentium officiis, impedit error voluptates officia? Sit, nemo accusamus!
+                  Pensar em acessibilidade é pensar em pessoas. A acessibilidade precisa estar presente na sociedade mais do que apenas superficialmente, pois a ausência dela exclui cidadãos de realizarem as atividades simples do dia a dia. Pessoas com deficiencia </p>
+                <p class="acessibilidade-p">
+                  A acessibilidade pode ser entendida como uma quebra de barreiras, trazendo autonomia e qualidade de vida para pessoas. 
                 </p>
                 <p class="acessibilidade-p">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi expedita facilis dolore tenetur quas sunt. Eligendi recusandae amet praesentium eaque at ullam natus a eveniet quia fuga voluptas, nostrum incidunt?
-                </p>
-                <p class="acessibilidade-p">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus exercitationem, inventore fuga ipsa repudiandae asperiores dolore assumenda! Dolorem perferendis quo error excepturi dolorum sunt quisquam pariatur praesentium, doloribus, ullam molestiae!
+                    
                 </p>
             </div>
             <div>
                 <img src="assets/img/img_pg_acessibilidade.png" alt="">
             </div>
-        </section>
-        <main class="importancia">
+          </section>
+          <section class="importancia">
             <h1 class="importancia-titulo">A importância da acessibilidade</h1>
             <p class="importancia-p">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae provident quo nam ducimus tempora beatae perspiciatis laudantium quas, aliquam corrupti asperiores temporibus illum laborum aperiam dolores maxime doloribus. Veniam, tempore!
+              Segundo o Censo de 2010, cerca de 24% da população brasileira declarou possuir alguma dificuldade visual, motora, auditiva ou intelectual [1]. 
             </p>
             <p class="importancia-p">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae provident quo nam ducimus tempora beatae perspiciatis laudantium quas, aliquam corrupti asperiores temporibus illum laborum aperiam dolores maxime doloribus. Veniam, tempore!
+              Nesse cenário, é evidente que a acessibilidade faz grande diferença na vida da população, pois é através dela que é possível acessar de maneira mais igualitária o meio físico e digital. 
             </p>
             <h2 class="importancia-subtitulo">O papel da acessibilidade digital</h2>
             <p class="importancia-p">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur aliquam exercitationem natus recusandae officiis, amet soluta itaque corrupti quae obcaecati impedit consequuntur suscipit voluptatum sit enim qui? Animi, inventore placeat.
+              A Web está cada vez mais presente no cotidiano da população, de maneira que não estar conectado pode ser uma barreira para o acesso à informação e comunicação. 
             </p>
             <p class="importancia-p">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur aliquam exercitationem natus recusandae officiis, amet soluta itaque corrupti quae obcaecati impedit consequuntur suscipit voluptatum sit enim qui? Animi, inventore placeat.
+              Na atualidade, as possibilidades de atividades que podem ser realizadas através da internet aumentam a cada dia, é possível estudar, trabalhar, comprar, vender e muito mais. 
             </p>
             <p class="importancia-p">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur aliquam exercitationem natus recusandae officiis, amet soluta itaque corrupti quae obcaecati impedit consequuntur suscipit voluptatum sit enim qui? Animi, inventore placeat.
+              Diante desse contexto, fica evidente que a acessibilidade digital tem se tornado cada vez mais essencial, uma vez que promove o acesso de pessoas com deficiência em um ambiente virtual [2].
             </p>
-        </main>
-        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+          </section>
+          <div id="carouselExampleDark" class="carousel carousel-dark slide">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -88,7 +91,7 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active" data-bs-interval="10000">
-                <img src="" class="d-block w-100" alt="...">
+                <img src="assets/img/steven_halking.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                   <h5>First slide label</h5>
                   <p>Some representative placeholder content for the first slide.</p>
@@ -118,6 +121,7 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
+        </main>
         <footer>
           <section>
               <img src="assets/img/Logo Wrapper.svg" alt="Logo da empresa acessibiliza, globo com borboleta sobreposta na cor azul">
@@ -126,6 +130,8 @@
             <p>Todos os direitos reservados &copy;</p>
             <p>Desenvolvido pelo grupo WAT</p>
           </section>
+          <a class="nav-bar_acessibilidade" href="#top" accesskey="1">Ir para o Conteúdo Principal [Alt + 1]</a>
+          <a class="nav-bar_acessibilidade" href="#menu" accesskey="2">Início do Menu [Alt + 2]</a>
         </footer>
         <script src="mobile.navbar.js"></script>
         <div vw class="enabled">

@@ -12,12 +12,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/style/pg_acessibilidade/header_acessibilidade.css">
-    <link rel="stylesheet" href="assets/style/pg_acessibilidade/main_acessibilidade.css">
+    <link rel="stylesheet" href="assets/style/pg_home/header_home.css">
     <link rel="stylesheet" href="assets/style/pg_documentacao/main_documentacao.css">
+    <link rel="stylesheet" href="assets/style/pg_home/pagina_inicial.css">
 </head>
 <body>
     <header>
+        <a class="nav-bar_acessibilidade" href="#top" accesskey="1">Ir para o Conteúdo Principal [Alt + 1]</a>
+        <a class="nav-bar_acessibilidade" href="#menu" accesskey="2">Início do Menu [Alt + 2]</a>
+        <a class="nav-bar_acessibilidade" href="#altocontraste" id="altocontraste" accesskey="3" onclick="window.toggleContrast()" onkeydown="window.toggleContrast()">Alto contraste [Alt + 3]</a>
         <section class="imagens">
             <img class="img-laranja" src="assets/img/forma_fina-removebg-preview_1-removebg-preview (1).png" alt="Circulo vazado de cor laranja">
             <nav class="nav">
@@ -43,7 +46,7 @@
             </nav>
             <img class="img" src="assets/img/forma1-PhotoRoom_1-removebg-preview.png" alt="Forma em formato de onda na cor azul escuro">
     </header>
-    <main class="busca">
+    <main id="top" class="busca">
         <h1>Navegue pela documentação WCAG</h1>
         <h3>Escolha a diretriz e o nível de acessibilidade</h3>
         <section class="busca-selects">
@@ -71,6 +74,8 @@
           <p>Todos os direitos reservados &copy;</p>
           <p>Desenvolvido pelo grupo WAT</p>
         </section>
+        <a class="nav-bar_acessibilidade" href="#top" accesskey="1">Ir para o Conteúdo Principal [Alt + 1]</a>
+        <a class="nav-bar_acessibilidade" href="#menu" accesskey="2">Início do Menu [Alt + 2]</a>
       </footer>
     <script src="mobile.navbar.js"></script>
     <div vw class="enabled">
