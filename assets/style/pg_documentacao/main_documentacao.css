@@ -107,6 +107,11 @@ footer{
         opacity: 0;
     }
 
+    .navbar navbar-expand-lg bg-body-tertiary {
+    
+
+    }
+
     .nav-list {
 
         position: absolute;

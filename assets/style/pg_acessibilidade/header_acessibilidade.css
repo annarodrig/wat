@@ -7,6 +7,7 @@
     --cor-azul-escuro:#2B468B;
     --cor-texto-fundo-claro:#01273D;
     --cor-texto-fundo-escuro: #edede9;
+    --cor-azul-claro: #6EB2E3;
 
 }
 
@@ -104,13 +105,6 @@ html, body, header {
 
 }
 
-.nav-link:hover {
-
-    color: #243f81;
-    font-size: 22px;
-
-}
-
 .mobile-menu {
 
     cursor: pointer;
@@ -152,7 +146,7 @@ html, body, header {
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        background-color: var(--cor-azul-escuro);
+        background-color: var(--cor-azul-claro);
         transform: translateX(110%);
         transition: transform 0.3s ease-in;
     }

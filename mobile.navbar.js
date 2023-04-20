@@ -26,12 +26,19 @@ class MobileNavbar {
         this.mobileMenu.addEventListener("click", this.handleClick);
     }
 
+    addMouseEvent() {
+        this.mobileMenu.addEventListener("keypress", this.handleClick);
+
+    }
+
     init() {
         if(this.mobileMenu) {
             this.addClickEvent();
+            this.addMouseEvent();
         }
         return this;
     }
+
 }
 
 const mobileNavbar = new MobileNavbar(
