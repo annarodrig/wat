@@ -29,6 +29,32 @@ body {
     background-color: var(--cor-cinza-claro);
 }
 
+nav .nav-list:focus-visible {
+
+    border: #192bc2 solid 7px;
+    border-radius: 10px;
+    outline: none;
+
+}
+
+nav .nav-link:focus-within {
+
+    border: #192bc2 solid 7px;
+    padding: 15px;
+    color: #27187e;
+    font-size: larger;
+    font-weight: bold;
+    outline: none;
+}
+
+.nav-link:hover {
+
+    color: #27187e;
+    font-size: larger;
+    font-weight: bold;
+
+}
+
 .nav-bar_acessibilidade {
 
     position: absolute;
@@ -39,10 +65,55 @@ body {
     text-decoration: none;
 }
 
+.nav-bar_acessibilidade:focus-within {
+
+    border: #192bc2 solid 7px;
+    outline: none;
+
+}
     
 .nav-bar_acessibilidade:focus {
 
     left: 5px;
+}
+
+/*Navegação e menu hamburguer responsivo*/
+
+.nav-list {
+
+    display: flex;
+    gap: 50px;
+    margin-top: 1rem;
+
+}
+
+.nav-item {
+
+    list-style-type: none; 
+
+}
+
+.nav-link {
+    
+    text-decoration: none;
+    color: var(--cor-texto-fundo-claro); 
+
+}
+
+.mobile-menu {
+
+    cursor: pointer;
+    display: none;
+
+}
+
+.mobile-menu div {
+    
+    width: 32px;
+    height: 2px;
+    margin: 8px;
+    background-color: var(--cor-texto-fundo-claro);
+
 }
 
 /*--Footer--*/
@@ -58,5 +129,19 @@ footer{
 
     background: #F6F6F6;
     border-radius: 0px;
+
+}
+
+footer img:focus-visible {
+
+    border: #192bc2 solid 7px;
+    outline: none;
+
+}
+
+footer section p:focus-visible {
+
+    border: #192bc2 solid 7px;
+    outline: none;
 
 }

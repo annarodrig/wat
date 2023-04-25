@@ -1,0 +1,81 @@
+/*Resposividade do menu hamburguer*/
+
+@media (max-width: 999px) {
+
+    body {
+
+        overflow-x: hidden;
+
+    }
+
+    .img {
+
+        display: none;
+    }
+
+    .nav-list {
+
+        position: absolute;
+        margin-top: 35px;
+        right: 0;
+        width: 50vw;
+        height: 70vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #8ecae6;
+        box-shadow: -6px 8px 10px -6px black;
+        transform: translateX(110%);
+        transition: transform 0.3s ease-in;
+    }
+
+    .nav-item {
+        
+        margin-left: 0;
+        opacity: 0;
+    }
+
+    .nav-link {
+        color: #023047;
+    }
+
+    .mobile-menu {
+
+        display: block;
+    
+    }
+
+
+    .nav-list.active {
+
+        transform: translateX(0);
+
+    }
+
+    
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0);
+
+        }
+    }
+
+    .img-laranja {
+
+        width: 325px;
+    }
+
+    .usr {
+
+        margin-top: 250px;
+    
+    }
+    
+}

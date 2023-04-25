@@ -68,10 +68,9 @@ html, body, header {
 
 }
 
-.nav-link:hover {
+ul.nav-list.active {
 
-    color: #051335;
-    font-size: 22px;
+    margin-right: 0;
 
 }
 
@@ -83,6 +82,7 @@ html, body, header {
 }
 
 .mobile-menu div {
+    
     width: 32px;
     height: 2px;
     margin: 8px;
@@ -113,6 +113,26 @@ html, body, header {
 
 }
 
+.acessibilidade:focus-within {
+
+    border: #192bc2 solid 7px;
+    outline: none;
+
+
+}
+
+.acessibilidade:hover {
+
+    font-weight: large;
+
+}
+
+.titulo:focus-within {
+
+    border: #192bc2 solid 7px;
+    outline: none;
+}
+
 
 .section-1 {
 
@@ -131,6 +151,7 @@ html, body, header {
 
     background-color: var(--cor-azul-escuro);
     border: medium solid var(--cor-azul-escuro);
+    box-shadow: 0 8px 6px -6px black;
     border-radius: 15px;
     color: #F6F6F6;
     text-decoration: none;
@@ -139,82 +160,6 @@ html, body, header {
     padding: 30px;
     width: 70%;
 
-}
-
-/*Resposividade do menu hamburguer*/
-
-@media (max-width: 999px) {
-
-    body {
-
-        overflow-x: hidden;
-
-    }
-
-    .img {
-
-        display: none;
-    }
-
-    .nav-list {
-
-        position: absolute;
-        margin-top: 0;
-        right: 0;
-        width: 50vw;
-        height: 70vh;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        background-color: var(--cor-azul-escuro);
-        transform: translateX(110%);
-        transition: transform 0.3s ease-in;
-    }
-
-    .nav-item {
-        
-        margin-left: 0;
-        opacity: 0;
-    }
-
-    .nav-link {
-        color: var(--cor-texto-fundo-escuro);
-    }
-
-    .mobile-menu {
-
-        display: block;
-    
-    }
-
-
-    .nav-list.active {
-
-        transform: translateX(0);
-
-    }
-
-    
-    @keyframes navLinkFade {
-        from {
-            opacity: 0;
-            transform: translateX(50px);
-
-        }
-
-        to {
-            opacity: 1;
-            transform: translateX(0);
-
-        }
-    }
-
-    .img-laranja {
-
-        width: 325px;
-    }
-
-    
 }
 
 @media (max-width: 420px) {

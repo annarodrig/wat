@@ -24,18 +24,34 @@
     background-repeat: no-repeat;
     background-size: cover;
 
-}    
+}  
+
+.main:focus-visible {
+
+    border: #192bc2 solid 7px;
+    outline: none;
+
+}
 
 .titulo-texto {
     
     font-size: 40px;
     color: var(--cor-texto-fundo-claro);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     text-align: center;
 
     margin: 1rem;
     padding-top: 250px;
 
 }
+
+.titulo-texto:focus-within {
+
+    border: #192bc2 solid 7px;
+    outline: none;
+
+}
+
 
 .main p {
 
@@ -46,9 +62,23 @@
 
 }
 
+.main p:focus-within {
+
+    border: #192bc2 solid 7px;
+    outline: none;
+
+}
+
 .img-principal {
 
     margin-top: 250px;
+}
+
+.img-principal img:focus-within {
+
+    border: #192bc2 solid 7px;
+    outline: none;
+
 }
 
 @media (max-width: 1100px) {

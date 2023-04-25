@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>HOME | WEB ACESSÍVEL PARA TODOS</title>
+    <title>WAT - WEB ACESSÍVEL PARA TODOS : HOME</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -15,113 +15,120 @@
     <link rel="stylesheet" href="assets/style/pg_home/header_home.css">
     <link rel="stylesheet" href="assets/style/pg_home/main_home.css">
     <link rel="stylesheet" href="assets/style/pg_home/aside_home.css">
+    <link rel="stylesheet" href="assets/style/media/media_menu_hamburguer.css">
 </head>
 <body>
     <header>
-            <a class="nav-bar_acessibilidade" href="#top" accesskey="1">Ir para o Conteúdo Principal [Alt + 1]</a>
-            <a class="nav-bar_acessibilidade" href="#menu" accesskey="2">Início do Menu [Alt + 2]</a>
-            <a class="nav-bar_acessibilidade" href="#altocontraste" id="altocontraste" accesskey="3">Alto contraste [Alt + 3]</a>
-        </ul>
+        <div tabindex="0" vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+              <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <!--<a tabindex="0" class="nav-bar_acessibilidade" href="#top" accesskey="1">Ir para o Conteúdo Principal [Alt + 1]</a>
+        <a tabindex="0" class="nav-bar_acessibilidade" href="#menu" accesskey="2">Início do Menu [Alt + 2]</a>-->        </ul>
         <section class="imagens">
             <img class="img-laranja" src="assets/img/forma_fina-removebg-preview_1-removebg-preview (1).png" alt="Circulo vazado de cor laranja">
             <nav id="menu" class="nav">
-                <div role="navigation" tabindex="0" class="mobile-menu">
+                <div aria-label="Navegação entre três páginas" role="navigation" tabindex="0" class="mobile-menu">
                     <div class="line1"></div>
                     <div class="line2"></div>
                     <div class="line3"></div>
                 </div>
-                <ul id="menu" class="nav-list"
-                    role="navigation"
+                <ul tabindex="0" class="nav-list"
                     aria-label="Navegação entre três páginas"
+                    role="navigation"
                 >
                     <li class="nav-item">
-                        <a class="nav-link"  href="documentacao.html">Documentação</a>
+                        <a tabindex="0" class="nav-link"  href="documentacao.html">Documentação</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link"  href="index.html">Home</a>
+                        <a tabindex="0" class="nav-link"  href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link"  href="acessibilidade.html">Acessibilidade</a>
+                        <a tabindex="0" class="nav-link"  href="acessibilidade.html">Acessibilidade</a>
                     </li>
                 </ul>
             </nav>
             <img class="img" src="assets/img/forma1-PhotoRoom_1-removebg-preview.png" alt="Forma em formato de onda na cor azul escuro">
         </section>
         <section class="section-1">
-            <h1 class="titulo" >Entenda sobre acessibilidade e contribua para uma web sem barreiras</h1>
-            <a class="acessibilidade" href="acessibilidade.html">Comece sua jornada com a acessbilidade</a>
+            <h1 tabindex="0" class="titulo" >Entenda sobre acessibilidade e contribua para uma web sem barreiras</h1>
+            <a tabindex="0" aria-label="Link que te direciona para página acessibilidade" class="acessibilidade" href="acessibilidade.html">Comece sua jornada com a acessibilidade web</a>
         </section>
     </header>
-    <main id="top" class="main">
-            <section aria-label="Seção que contém um breve texto sobre a empresa acessibiliza e a acessibilidade em sites" class="texto">
-                <h2 class="titulo-texto">O intuito da empresa Acessibiliza</h2>
-                <p>
+    <main id="top" >
+        <article tabindex="0" aria-label="Seção que contém um breve texto sobre a empresa acessibiliza e a acessibilidade em sites" class="main">
+            <section class="texto">
+                <h2 tabindex="0" class="titulo-texto">O intuito da empresa Acessibiliza</h2>
+                <p tabindex="0" >
                     A acessibilidade está na raiz de seus sites e na forma que ele foi desenvolvido. Acreditam que um plugin de libras e de acessilibidade no site o torna acessível para todos, mas isso não é verdade e queremos te tirar desta bolha.
                 </p>
-                <p>
-                    Acessibiliza surgiu á partir dessa ideia, descontruir este pensamento e fazer você compreender o que é a acessibilidade na web e o seu importante papel que está presente até mesmo em sua vida, pois todos precisam utilizar a web sem barreiras.
+                <p tabindex="0">
+                    Acessibiliza surgiu á partir dessa ideia, desconstruir este pensamento e fazer você compreender o que é a acessibilidade na web e o seu importante papel que está presente até mesmo em sua vida, pois todos precisam utilizar a web sem barreiras.
                 </p>
             </section>
             <section class="img-principal">
-                <img src="assets/img/img-pessoas-em-png.png" alt="Grupo de seis pessoas, sendo duas duplas formadas por uma pessoa cega e uma pessoa segurando seu braço. A outra dupla é formada por uma pessoa cadeirante e outra pessoa levando a cadeira de rodas. Essas pessoas utilizam roupas nas cores azul, laranja, bege e branco.">
+                <img tabindex="0" src="assets/img/img-pessoas-em-png.png" alt="Grupo de seis pessoas, sendo duas duplas formadas por uma pessoa cega e uma pessoa segurando seu braço. A outra dupla é formada por uma pessoa cadeirante e outra pessoa levando a cadeira de rodas. Essas pessoas utilizam roupas nas cores azul, laranja, bege e branco.">
             </section>
-    </main>
-    <aside aria-label="Seção que contém as informações de missão, visão e valores da empresa acessibiliza">
-
-            <h2 class="empresa-titulo">Contruir uma web sem barreiras</h2>
-
-            <section class="empresa" 
-            role="tablist"
-            aria-label="Lista de três elementos"
-            >
-                <div  tabindex="0" role="tab" class="empresa-container">
+        </article>
+        <aside tabindex="0" aria-label="Seção que contém as informações de missão, visão e valores da empresa acessibiliza">
+                <h2 tabindex="0" class="empresa-titulo">Construir uma web sem barreiras</h2>
+                <section class="empresa" 
+                role="tablist"
+                aria-label="Seção que contém três elementos"
+                >
+                    <div tabindex="0" role="tab" class="empresa-container">
                     <h2>Missão</h2>
-                    <p>A nossa é missão ajudar a quebrar as barreiras de acesso que existem na web, acreditando que cada tecnologia utilizada corretamente no desenvolvimento do seu site, fará grande diferença na vida do usuário com alguma limitação física ou neurológica.</p>
-                </div>
-                <div tabindex="0" role="tab"  class="empresa-container">
-                    <h2>Visão</h2>
-                    <p>A empresa visa ser um grande auxílio para desenvolvedores, disponibilizando através do WAT amparo indispensável para tornarem seus projetos acessíveis. O futuro da empresa é garantir que estudantes e desenvolvedores tenham capacidade técnica para criar sites acessíveis.</p>
-                </div>
-                <div tabindex="0" role="tab" class="empresa-container">
-                    <h2>Valores</h2>
-                    <ul 
-                    class="tabs_group"
-                    role="tablist"
-                    aria-label="Lista dos valores da empresa Acessibiliza"
-                    >
-                        <li tabindex="0" role="tab">Inclusão</li>
-                        <li tabindex="0" role="tab">Ética</li>
-                        <li tabindex="0" role="tab">Comprometimento</li>
-                        <li tabindex="0" role="tab">Qualidade</li>
-                        <li tabindex="0" role="tab">Conhecimento</li>
-                    </ul>
-                </div>
-                <section class="frase">
-                    <img src="assets/img/e-book (1) 1.svg" alt="Livro aberto na cor preta vazado">
-                    <div id="linha-vertical"></div>
-                    <p> “O poder da Web está em sua universalidade. O acesso de todos, independentemente da deficiência, é um aspecto essencial." (Berners-Lee, Tim)</p>
+                    <p>A nossa missão é  ajudar a quebrar as barreiras de acesso que existem na web, acreditando que cada tecnologia utilizada corretamente no desenvolvimento do seu site, fará grande diferença na vida do usuário com alguma limitação física ou neurológica.</p>
+                    </div>
+                    <div tabindex="0" role="tab"  class="empresa-container">
+                        <h2>Visão</h2>
+                        <p>A empresa visa ser um grande auxílio para desenvolvedores, disponibilizando através do WAT amparo indispensável para tornarem seus projetos acessíveis. O futuro da empresa é garantir que estudantes e desenvolvedores tenham capacidade técnica para criar sites acessíveis.</p>
+                    </div>
+                    <div class="empresa-container">
+                        <h2>Valores</h2>
+                        <ul 
+                        class="tabs_group"
+                        role="list"
+                        aria-label="Lista dos valores da empresa Acessibiliza"  
+                        tabindex="0"   
+                        >
+                            <li tabindex="0" role="listitem" aria-label="Inclusão">Inclusão</li>
+                            <li tabindex="0" role="listitem" aria-label="Ética">Ética</li>
+                            <li tabindex="0" role="listitem" aria-label="Comprometimento">Comprometimento</li>
+                            <li tabindex="0" role="listitem" aria-label="Qualidade">Qualidade</li>
+                            <li tabindex="0" role="listitem" aria-label="Conhecimento">Conhecimento</li>
+                        </ul>
+                    </div>
+                    <div class="frase">
+                        <img tabindex="0" src="assets/img/e-book (1) 1.svg" alt="Livro aberto na cor preta vazado">
+                        <div id="linha-vertical"></div>
+                        <p tabindex="0" > “O poder da Web está em sua universalidade. O acesso de todos, independentemente da deficiência, é um aspecto essencial." (Berners-Lee, Tim)</p>
+                    </div>
                 </section>
-            </section>
-    </aside>
+        </aside>
+    </main>
     <footer>
         <section>
-            <img src="assets/img/Logo Wrapper.svg" alt="Logo da empresa acessibiliza, globo com borboleta sobreposta na cor azul">
+            <img tabindex="0" src="assets/img/Logo Wrapper.svg" alt="Logo da empresa acessibiliza, globo com borboleta sobreposta na cor azul">
         </section>
         <section>
-            <p>Desenvolvido pelo grupo WAT</p>
-            <p>Todos os direitos reservados &copy;</p>
+            <p tabindex="0">Desenvolvido pelo grupo WAT</p>
+            <p tabindex="0">Todos os direitos reservados &copy;</p>
         </section>
-        <a class="nav-bar_acessibilidade" href="#top" accesskey="1">Ir para o Conteúdo Principal [Alt + 1]</a>
-        <a class="nav-bar_acessibilidade" href="#menu" accesskey="2">Início do Menu [Alt + 2]</a>
+        <!-- <a class="nav-bar_acessibilidade" href="#top" accesskey="1">Ir para o Conteúdo Principal [Alt + 1]</a>
+        <a class="nav-bar_acessibilidade" href="#menu" accesskey="2">Início do Menu [Alt + 2]</a> -->
     </footer>
     <script src="mobile.navbar.js"></script>
-    <div vw class="enabled">
-        <div vw-access-button class="active"></div>
-        <div vw-plugin-wrapper>
-          <div class="vw-plugin-top-wrapper"></div>
-        </div>
-      </div>
-      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-      <script src="vlibras.js"></script>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script src="vlibras.js"></script>
+    <noscript>
+        Please ensure Javascript is enabled for purposes of <a href="https://www.gov.br/governodigital/pt-br/vlibras">website accessibility in Libras</a>
+    </noscript>
+    <script>(function(d){var s = d.createElement("script");s.setAttribute("data-account", "H2Bcqw9fy9");s.setAttribute("src", "https://cdn.userway.org/widget.js");(d.body || d.head).appendChild(s);})(document)</script>
+    <noscript>
+        Please ensure Javascript is enabled for purposes of <a href="https://userway.org">website accessibility</a>
+    </noscript>
 </body>
 </html>
