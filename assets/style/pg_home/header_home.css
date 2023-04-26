@@ -39,7 +39,14 @@ html, body, header {
 
 }
 
-.img, .img-laranja {
+.img-laranja {
+
+    width: 350px;
+    height: 350px;
+
+}
+
+.img {
 
     width: 450px;
 

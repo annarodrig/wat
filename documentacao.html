@@ -50,26 +50,53 @@
                     </li>
                 </ul>
             </nav>
-            <img class="img" src="assets/img/forma1-PhotoRoom_1-removebg-preview.png" alt="Forma em formato de onda na cor azul escuro">
+            <img class="img" src="assets/img/forma-laranja-melhorada.png" alt="Forma em formato de onda na cor azul escuro">
     </header>
     <main id="top" class="busca">
         <h1 tabindex="0" >Navegue pela documentação WCAG</h1>
         <h3 tabindex="0" >Escolha a diretriz e o nível de acessibilidade</h3>
-        <section class="busca-selects">
-                <label for="diretriz">Escolha a diretriz</label>
-                <select tabindex="0" class="busca-selects_diretriz" name="diretriz" id="diretriz" >
-                    <option tabindex="0" value="perceptivel">Percetível</option>
-                    <option tabindex="0" value="perceptivel">Robusto</option>
-                    <option tabindex="0" value="perceptivel">Operável</option>
-                    <option tabindex="0" value="perceptivel">Compreensivo</option>
+        <div class="row g-2">
+            <div class="col-md">
+                <div class="form-floating">
+                  <select class="form-select" id="floatingSelectGrid">
+                    <option selected>Selecione a diretriz</option>
+                    <option value="Percetível">Percetível</option>
+                    <option value="Robusto">Robusto</option>
+                    <option value="Operável">Operável</option>
+                    <option value="Compreensivo">Compreensivo</option>
+                  </select>
+                  <label for="floatingSelectGrid">Escolha a diretriz</label>
+                </div>
+            </div>
+            <div class="col-md">
+              <div class="form-floating">
+                <select class="form-select" id="floatingSelectGrid">
+                  <option selected>Selecione o nível</option>
+                  <option value="nivelA">Nível A</option>
+                  <option value="nivelAA">Nível AA</option>
+                  <option value="nivelAAA">Nível AAA</option>
                 </select>
-                <label for="nivel">Escolha o nível</label>
-                <select tabindex="0" class="busca-selects_nivel" name="nivel" id="nivel" >
-                    <option tabindex="0" value="nivelA">Nível A</option>
-                    <option tabindex="0" value="nivelAA">Nível AA</option>
-                    <option tabindex="0" value="nivelAAA">Nível AAA</option>
-                </select>
-        </section>
+                <label for="floatingSelectGrid">Escolha o nível</label>
+              </div>
+            </div>
+        </div> 
+        <!-- <div class="diretriz">
+            <label for="diretriz" class="busca-selects_label" tabindex="0">Escolha a diretriz</label>
+            <select tabindex="0" class="busca-selects" name="diretriz" id="diretriz" >
+                <option tabindex="0" value="perceptivel">Percetível</option>
+                <option tabindex="0" value="perceptivel">Robusto</option>
+                <option tabindex="0" value="perceptivel">Operável</option>
+                <option tabindex="0" value="perceptivel">Compreensivo</option>
+            </select>
+        </div>
+        <div class="nivel">
+            <label for="nivel" class="busca-selects_label" tabindex="0">Escolha o nível</label>
+            <select tabindex="0" class="busca-selects" name="nivel" id="nivel" >
+                <option tabindex="0" value="nivelA">Nível A</option>
+                <option tabindex="0" value="nivelAA">Nível AA</option>
+                <option tabindex="0" value="nivelAAA">Nível AAA</option>
+            </select>
+        </div> -->
         <section class="criterios">
             
         </section>
