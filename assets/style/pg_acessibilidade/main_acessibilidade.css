@@ -26,6 +26,7 @@
     flex-direction: column;
     margin-top: 1rem ;
     padding: 2rem;
+    margin-bottom: 2rem;
 
 }
 
@@ -61,16 +62,59 @@
 
 }
 
-/* .relatos {
+.titulo-relatos {
+
+    text-align: center;
+    font-weight: bold;
+
+}
+.row {
+
+    margin-top: calc(1 * var(--bs-gutter-y));
+    margin-right: calc(.5 * var(--bs-gutter-x));
+    margin-left: calc(.5 * var(--bs-gutter-x));
+}
+
+
+/* .relatos{
 
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    margin: 1rem;
+
+} 
+
+.relatos-div {
+
+    display: flex;
+    padding: 2rem;
+
+}
+
+.relatos-div img {
+
+    width: 70vh;
+    box-shadow: 3px 3px 5px 6px #ccc;
+
+
+}
+
+.relatos-div-text {
+
+    text-align: center;
+    font-size: 25px;
+    padding: 1rem;
+    margin: 1rem;
+
+}
+
+.relatos-div h5{
+
+    font-weight: bold;
+
 
 } */
-
-
-
 
 /*--Footer--*/
 
