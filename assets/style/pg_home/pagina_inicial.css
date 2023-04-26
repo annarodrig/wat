@@ -86,7 +86,6 @@ nav .nav-link:focus-within {
     margin-top: 1rem;
 
 }
-
 .nav-item {
 
     list-style-type: none; 
@@ -115,6 +114,8 @@ nav .nav-link:focus-within {
     background-color: var(--cor-texto-fundo-claro);
 
 }
+
+
 
 /*--Footer--*/
 

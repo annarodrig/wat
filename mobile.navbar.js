@@ -20,10 +20,13 @@ class MobileNavbar {
     handleClick() {
         this.navList.classList.toggle(this.activeClass);
         this.animateLinks();
-    }           
+        
+        document.querySelector("#ativo").style.display = "flex";
+    }
 
     addClickEvent() {
         this.mobileMenu.addEventListener("click", this.handleClick);
+        
     }
 
     addMouseEvent() {
@@ -36,7 +39,9 @@ class MobileNavbar {
             this.addClickEvent();
             this.addMouseEvent();
         }
+        
         return this;
+   
     }
 
 }
@@ -48,3 +53,20 @@ const mobileNavbar = new MobileNavbar(
 );
 
 mobileNavbar.init();
+
+window.addEventListener('resize', function(){
+
+    let tamanho = window.innerWidth;
+
+    if (tamanho >= 999){
+
+        document.querySelector("#ativo").style.display = "none";
+        document.querySelector(".nav-list").style.display = "flex";
+
+    } else {
+
+        document.querySelector("#ativo").style.display = "flex";
+
+    }
+
+});
