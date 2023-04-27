@@ -42,15 +42,27 @@
 
 }
 
+.importancia-titulo:focus-visible {
+
+    border: #192bc2 solid 7px;
+    outline: none;
+}
+
 .importancia-p {
 
     color: var(--cor-texto-fundo-claro);
     font-size: 25px;
     margin: auto;
     padding: 1rem;
-    max-width: 1600px;
-    min-width: 320px;
+    width: 80%;
 
+
+}
+
+.importancia p:focus-visible {
+
+    border: #192bc2 solid 7px;
+    outline: none;
 }
 
 .importancia-subtitulo {
@@ -64,6 +76,12 @@
 
 }
 
+.importancia-subtitulo:focus-visible {
+
+    border: #192bc2 solid 7px;
+    outline: none;
+}
+
 .titulo-relatos {
 
     text-align: center;
@@ -72,6 +90,13 @@
 
 
 }
+
+.titulo-relatos:focus-visible {
+
+    border: #192bc2 solid 7px;
+    outline: none;
+}
+
 .row {
 
     margin-top: calc(1 * var(--bs-gutter-y));
@@ -79,46 +104,29 @@
     margin-left: calc(.5 * var(--bs-gutter-x));
 }
 
+.card-img-top:focus-visible {
 
-/* .relatos{
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin: 1rem;
-
-} 
-
-.relatos-div {
-
-    display: flex;
-    padding: 2rem;
-
+    border: #192bc2 solid 7px;
+    outline: none;
 }
 
-.relatos-div img {
+.card-title:focus-visible {
 
-    width: 70vh;
-    box-shadow: 3px 3px 5px 6px #ccc;
-
-
+    border: #192bc2 solid 7px;
+    outline: none;
 }
 
-.relatos-div-text {
+.card-text:focus-visible {
 
-    text-align: center;
-    font-size: 25px;
-    padding: 1rem;
-    margin: 1rem;
-
+    border: #192bc2 solid 7px;
+    outline: none;
 }
 
-.relatos-div h5{
+.text-body-secondary a:focus-visible {
 
-    font-weight: bold;
-
-
-} */
+    border: #192bc2 solid 7px;
+    outline: none;
+}
 
 /*--Footer--*/
 

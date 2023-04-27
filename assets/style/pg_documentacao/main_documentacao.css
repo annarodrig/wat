@@ -48,13 +48,27 @@ body {
 
 }
 
+h1:focus-visible {
 
-.form-floating label {
-    color: var(--cor-texto-fundo-claro)
+    border: #192bc2 solid 7px;
+    outline: none;
+
+}
+
+h2:focus-visible {
+
+    border: #192bc2 solid 7px;
+    outline: none;
+
 }
 
 
-.busca h3 {
+.form-floating label {
+    color: var(--cor-texto-fundo-claro);
+}
+
+
+.busca h2 {
     
     margin-top: 2rem;
     margin-bottom: 3rem;

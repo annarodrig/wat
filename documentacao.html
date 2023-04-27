@@ -28,7 +28,7 @@
         </div>
         <!--<a tabindex="0" class="nav-bar_acessibilidade" href="#top" accesskey="1">Ir para o Conteúdo Principal [Alt + 1]</a>
         <a tabindex="0" class="nav-bar_acessibilidade" href="#menu" accesskey="2">Início do Menu [Alt + 2]</a>-->        <section class="imagens">
-            <img class="img-laranja" src="assets/img/forma_fina-removebg-preview_1-removebg-preview (1).png" alt="Circulo vazado de cor laranja">
+            <img class="img-laranja" src="assets/img/forma-laranja.png" alt="Circulo vazado de cor laranja">
             <nav class="nav">
                 <div aria-label="Navegação entre três páginas" role="navigation" tabindex="0" class="mobile-menu">
                     <div class="line1"></div>
@@ -50,33 +50,34 @@
                     </li>
                 </ul>
             </nav>
-            <img class="img" src="assets/img/forma-laranja-melhorada.png" alt="Forma em formato de onda na cor azul escuro">
+            <img class="img" src="assets/img/forma-azul.png" alt="Forma em formato de onda na cor azul escuro">
     </header>
     <main id="top" class="busca">
         <h1 tabindex="0" >Navegue pela documentação WCAG</h1>
-        <h3 tabindex="0" >Escolha a diretriz e o nível de acessibilidade</h3>
+        <h2 tabindex="0" >Escolha a diretriz e o nível de acessibilidade</h2>
         <div class="row g-2">
             <div class="col-md">
                 <div class="form-floating">
-                  <select class="form-select" id="floatingSelectGrid">
+                  <select class="form-select" id="diretriz">
                     <option selected>Selecione a diretriz</option>
-                    <option value="Percetível">Percetível</option>
-                    <option value="Robusto">Robusto</option>
-                    <option value="Operável">Operável</option>
-                    <option value="Compreensivo">Compreensivo</option>
+                    <option value="1">Percetível</option>
+                    <option value="2">Robusto</option>
+                    <option value="3">Operável</option>
+                    <option value="4">Compreensivo</option>
+                    <option value="5">Conformidade</option>
                   </select>
-                  <label for="floatingSelectGrid">Escolha a diretriz</label>
+                  <label aria-label="Escolha a diretriz - Existem cinco diretrizes" for="diretriz">Escolha a diretriz</label>
                 </div>
             </div>
             <div class="col-md">
               <div class="form-floating">
-                <select class="form-select" id="floatingSelectGrid">
+                <select class="form-select" id="nivel">
                   <option selected>Selecione o nível</option>
                   <option value="nivelA">Nível A</option>
                   <option value="nivelAA">Nível AA</option>
                   <option value="nivelAAA">Nível AAA</option>
                 </select>
-                <label for="floatingSelectGrid">Escolha o nível</label>
+                <label aria-label="Escolha o nível - Existem três niveis" for="nivel">Escolha o nível</label>
               </div>
             </div>
         </div> 
@@ -103,11 +104,11 @@
     </main>
     <footer>
         <section>
-            <img tabindex="0" src="assets/img/Logo Wrapper.svg" alt="Logo da empresa acessibiliza, globo com borboleta sobreposta na cor azul">
+            <img class="logo" tabindex="0" src="assets/img/logo-acessibiliza.svg" alt="Logo da empresa acessibiliza, globo com borboleta sobreposta na cor azul">
         </section>
         <section>
-          <p tabindex="0">Todos os direitos reservados &copy;</p>
-          <p tabindex="0">Desenvolvido pelo grupo WAT</p>
+          <p tabindex="0">Todos os direitos reservados &copy; 2023</p>
+          <p tabindex="0">Desenvolvido pelo grupo Acessibiliza</p>
         </section>
         <!-- <a class="nav-bar_acessibilidade" href="#top" accesskey="1">Ir para o Conteúdo Principal [Alt + 1]</a>
         <a class="nav-bar_acessibilidade" href="#menu" accesskey="2">Início do Menu [Alt + 2]</a> -->

@@ -57,11 +57,17 @@ html, body, header {
     flex-wrap: wrap;
     margin: auto;
     padding: 1rem;
-    max-width: 1600px;
-    min-width: 320px;
+    width: 80%;
 
 
 }
+
+.acessibilidade:focus-visible {
+
+    border: #192bc2 solid 7px;
+    outline: none;
+}
+
 
 .acessibilidade-titulo {
 
@@ -74,6 +80,12 @@ html, body, header {
     margin-top: -300px;
 }
 
+.acessibilidade-titulo:focus-visible {
+
+    border: #192bc2 solid 7px;
+    outline: none;
+}
+
 .acessibilidade-p {
 
     color: var(--cor-texto-fundo-claro);
@@ -82,10 +94,22 @@ html, body, header {
 
 }
 
+.acessibilidade p:focus-visible {
+
+    border: #192bc2 solid 7px;
+    outline: none;
+}
+
 
 .acessibilidade img {
 
     width: 100%;
 
+}
+
+.acessibilidade img:focus-visible {
+
+    border: #192bc2 solid 7px;
+    outline: none;
 }
 

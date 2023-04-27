@@ -68,6 +68,7 @@ aside:focus-visible {
 .empresa-container:focus-visible {
 
     border: #192bc2 solid 7px;
+    box-shadow: 0 0 5px 5px #2b3bd1;
     outline: none;
 
 }
@@ -86,6 +87,7 @@ aside:focus-visible {
     margin: 1rem;
 
 }
+
 
 .tabs_group:focus-visible {
 
