@@ -1,4 +1,6 @@
-<?php include ("bd/consulta.php");?>
+<?php include ("bd/conexao.php"); 
+      include ("bd/consulta.php");
+?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -53,42 +55,49 @@
             </nav>
             <img class="img" src="assets/img/forma-azul.png" alt="Forma em formato de onda na cor azul escuro">
     </header>
-    <main id="top" class="busca">
-        <h1 tabindex="0">Navegue pela documentação WCAG</h1>
-        <h2 tabindex="0">Escolha a diretriz e o nível de acessibilidade</h2>
-        <div class="row g-2">
-            <div class="col-md">
-                <div class="form-floating">
-                  <select class="form-select" id="diretriz" name="diretriz">
-
-                  <?php
-                    $query = $conn->query("SELECT * FROM tb_diretriz");
-                  ?>
-
-                    <option selected>Selecione a diretriz</option>
-                    <option value="1">Perceptível</option>
-                    <option value="2">Robusto</option>
-                    <option value="3">Operável</option>
-                    <option value="4">Compreensivo</option>
-                    <option value="5">Conformidade</option>
-                  </select>
-                  <label aria-label="Escolha a diretriz - Existem cinco diretrizes" for="diretriz">Escolha a diretriz</label>
-                </div>
-            </div>
-            <div class="col-md">
-              <div class="form-floating">
-                <select class="form-select" id="nivel">
-                  <option selected>Selecione o nível</option>
-                  <option value="nivelA">Nível A</option>
-                  <option value="nivelAA">Nível AA</option>
-                  <option value="nivelAAA">Nível AAA</option>
-                </select>
-                <label aria-label="Escolha o nível - Existem três niveis" for="nivel">Escolha o nível</label>
+    <main id="top">
+        <section  class="busca">
+          <h1 tabindex="0">Navegue pela documentação WCAG</h1>
+          <h2 tabindex="0">Escolha a diretriz e o nível de acessibilidade</h2>
+          <div class="row g-2">
+              <div class="col-md">
+                  <div class="form-floating">
+                    <select class="form-select" id="diretriz" name="diretriz">
+          
+                      <option selected>Selecione a diretriz</option>
+                      <option value="1">Perceptível</option>
+                      <option value="2">Robusto</option>
+                      <option value="3">Operável</option>
+                      <option value="4">Compreensivo</option>
+                      <option value="5">Conformidade</option>
+                    </select>
+                    <label aria-label="Escolha a diretriz - Existem cinco diretrizes" for="diretriz">Escolha a diretriz</label>
+                  </div>
               </div>
-            </div>
-        </div> 
-        <section id="criterios">
+              <div class="col-md">
+                <div class="form-floating">
+                  <select class="form-select" id="nivel">
+                    <option selected>Selecione o nível</option>
+                    <option value="1">Nível A</option>
+                    <option value="2">Nível AA</option>
+                    <option value="3">Nível AAA</option>
+                  </select>
+                  <label aria-label="Escolha o nível - Existem três niveis" for="nivel">Escolha o nível</label>
+                </div>
+              </div>
+          </div>
+        </section>
+        <section class="criterios">
+        <?php
+              $result = busca_criterio($conn);
             
+              while($linha = mysqli_fetch_assoc($result)){
+        ?>
+               <h3><?= utf8_encode($linha['nm_exemplo'])?></h3>
+               <p><?= utf8_encode($linha['exemplo'])?></p>
+        <?php
+              }
+          ?>
         </section>
     </main>
     <footer>

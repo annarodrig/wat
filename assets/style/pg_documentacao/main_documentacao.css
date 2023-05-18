@@ -74,6 +74,14 @@ h2:focus-visible {
     margin-bottom: 3rem;
 } 
 
+.criterios {
+
+    margin: 2rem;
+    padding: 1rem;
+    text-align: center;
+
+}
+
 /*--Footer--*/
 
 footer{

@@ -1,15 +1,13 @@
 <?php
-$servername = "localhost"; 
-$username = "root"; 
-$password = ""; 
-$dbname = "mydb"; 
 
-// Cria conexão
-$conn = mysqli_connect($servername, $username, $password, $dbname);
-
-// Verifica conexão
-if (!$conn) {
-    die("Conexão falhou: " . mysqli_connect_error());
+function busca_criterio($conn){
+    $query = "SELECT nm_exemplo, exemplo, nm_tipo FROM tb_criterios_sucesso, tb_diretriz, tb_nivel WHERE fk_cd_diretriz = cd_diretriz and fk_cd_nivel = cd_nivel and cd_nivel = 2";
+    
+    $result = mysqli_query($conn, $query);
+    
+    return $result;
+    
 }
-echo "Conexão bem sucedida";
+
+
 ?>
